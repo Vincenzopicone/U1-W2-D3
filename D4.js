@@ -207,14 +207,14 @@ switch (true) {
   case massa === 500:
     console.log("Esercizio 7: Ship is half loaded");
     break;
-  case massa > 1000:
-    console.log("Esercizio 7: DANGER! OVERLOAD ALERT: Jump ship now");
+  case massa > 700 && massa < 900:
+    console.log("Esercizio 7: Warning: Load is over 700");
     break;
-  case massa > 900:
+  case massa > 900 && massa < 1000:
     console.log("Esercizio 7: Critical Load: Over 900");
     break;
-  case massa > 700:
-    console.log("Esercizio 7: Warning: Load is over 700");
+  case massa > 1000:
+    console.log("Esercizio 7: DANGER! OVERLOAD ALERT: Jump ship now");
     break;
 }
 
